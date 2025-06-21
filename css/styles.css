@@ -7,12 +7,12 @@
   --font-specific-v2: "Work Sans", monospace;
 
   /* Brand palette */
+  --color-text: #183b4e; /* dark blue */
   --color-bg: #f5f5dc; /* beige */
   --color-org: #e07b39; /* orange */
   --color-brown: #b6a28e; /* brown */
   --color-sage: #dce4c9; /* sage */
-  --color-text: #183b4e;
-  --color-grey: #dadfe3;
+  --color-grey: #dadfe3; /* light grey */
 }
 
 body {
