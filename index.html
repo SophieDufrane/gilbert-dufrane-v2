@@ -28,7 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header>
       <!-- Navbar or logo goes here -->
       <nav class="navbar navbar-expand-lg custom-navbar">
@@ -69,37 +69,54 @@
       </nav>
     </header>
 
-    <main>
+    <main class="flex-grow-1">
       <!-- Hero image or intro text -->
+      <h1>Home Page</h1>
     </main>
 
-    <footer>
-      <!-- Footer content -->
-      <footer class="site-footer">
-        <div class="footer-container">
-          <div class="footer-top">
-            <p>&copy; 2025 Gilbert Dufrane. Tous droits réservés.</p>
+    <!-- Footer content -->
+    <footer class="site-footer mt-auto">
+      <div class="footer-container px-3 px-md-4">
+        <div class="row align-items-center">
+          <div class="col-8 col-sm-9">
+            <p class="mb-0 footer-main-text">&copy; 2025 Gilbert Dufrane</p>
+            <p class="footer-contact mt-2 mb-0">
+              Contact : gilbert.dufrane@orange.fr
+            </p>
+            <p class="footer-credit mt-2 mb-0">
+              <a
+                href="https://github.com/SophieDufrane"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Site créé par Sophie Dufrane
+              </a>
+            </p>
+          </div>
+          <div
+            class="col-4 col-sm-3 d-flex flex-column align-items-end justify-content-end"
+          >
             <a
               href="https://www.facebook.com/guilberte"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              class="footer-icon"
+              class="footer-icon mb-2"
             >
               <i class="fab fa-facebook fa-lg"></i>
             </a>
-          </div>
-          <p class="footer-credit">
             <a
-              href="https://github.com/SophieDufrane"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="footer-icon"
             >
-              Site créé par Sophie Dufrane
+              <i class="fab fa-instagram fa-lg"></i>
             </a>
-          </p>
+          </div>
         </div>
-      </footer>
+      </div>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
