@@ -8,15 +8,13 @@
 
   /* Brand palette 2025 */
   --color-text: #282737; /* dark blue */
+  --color-flash-orange: #f75423; /* flash orange */
   --color-bg: #f5f5dc; /* beige */
   --color-sky: #a7c0ca; /* sky blue */
-  --color-moss: #99a163; /* moss green */
   --color-champagne: #dacfbc; /* champagne */
-  --color-gold: #d3c880; /* gold */
+  --color-lgt-orange: #c7987d; /* light orange */
+  --color-moss: #dce4c9; /* moss green */
   --color-lgt-grey: #c2beb5; /* light grey */
-  --color-pink: #b58e8b; /* pink */
-  --color-lgt-orange: #c87444; /* light orange */
-  --color-flash-orange: #f75423; /* flash orange */
 }
 
 body {
@@ -182,7 +180,7 @@ body {
   font-size: 2.3rem;
   font-family: var(--font-body);
   color: var(--color-text);
-  text-align: left;
+  /* text-align: left !important; */
 }
 
 .book-summary {
