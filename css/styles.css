@@ -23,6 +23,24 @@ body {
   background-color: var(--color-bg);
 }
 
+.section-divider {
+  width: 30%;
+  height: 1px;
+  background-color: var(--color-flash-orange);
+  border: none;
+  margin: 25px auto;
+}
+
+.btn-custom {
+  color: var(--color-text);
+  font-family: var(--font-specific);
+  font-size: 0.8rem;
+  text-transform: var(--font-specific-transform);
+  padding: 0.5rem 1rem;
+  border: var(--color-text) 1px solid;
+  border-radius: 0.3rem;
+}
+
 /* ---------------- Navbar ---------------- */
 .navbar {
   color: var(--color-text);
@@ -136,7 +154,7 @@ body {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
-/* ---------------- Book Cards ---------------- */
+/* ---------------- Ouvrages - Book Cards ---------------- */
 .card-section .book-card:first-child {
   margin-top: 0;
   padding-top: 5rem;
@@ -171,16 +189,28 @@ body {
   background: #fff;
 }
 
+.book-cover-link img {
+  border: none;
+  outline: none;
+}
+
+.book-cover-link .book-cover {
+  cursor: pointer;
+}
+
+.book-cover-link:hover .book-cover,
+.book-cover-link:focus .book-cover,
 .book-cover:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 24px rgba(24, 59, 78, 0.18);
+  cursor: pointer;
 }
 
 .book-title {
   font-size: 2.3rem;
   font-family: var(--font-body);
   color: var(--color-text);
-  /* text-align: left !important; */
 }
 
 .book-summary {
@@ -191,14 +221,15 @@ body {
   margin: 0 auto;
 }
 
-.btn-custom {
-  color: var(--color-text);
-  font-family: var(--font-specific);
-  font-size: 0.8rem;
-  text-transform: var(--font-specific-transform);
-  padding: 0.5rem 1rem;
-  border: var(--color-text) 1px solid;
-  border-radius: 0.3rem;
+/* ---------------- Detail - Book Cards ---------------- */
+.book-detail-cover {
+  max-width: 130px;
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: -12px 12px 18px -8px rgba(24, 59, 78, 0.18),
+    0 8px 16px -8px rgba(24, 59, 78, 0.12);
+  background: #fff;
 }
 
 /* ---------------- Media ---------------- */
