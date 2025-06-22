@@ -6,15 +6,17 @@
   --font-specific: "IBM Plex Sans", sans-serif;
   --font-specific-transform: uppercase;
 
-  /* Brand palette */
-  --color-text: #183b4e; /* dark blue */
+  /* Brand palette 2025 */
+  --color-text: #282737; /* dark blue */
   --color-bg: #f5f5dc; /* beige */
-  --color-org: #e07b39; /* orange */
-  --color-lgt-org: #da938a; /* light orange */
-  --color-lgt-blue: #d9e6ec; /* light blue */
-  --color-brown: #b6a28e; /* brown */
-  --color-sage: #dce4c9; /* sage */
-  --color-grey: #dadfe3; /* light grey */
+  --color-sky: #a7c0ca; /* sky blue */
+  --color-moss: #99a163; /* moss green */
+  --color-champagne: #dacfbc; /* champagne */
+  --color-gold: #d3c880; /* gold */
+  --color-lgt-grey: #c2beb5; /* light grey */
+  --color-pink: #b58e8b; /* pink */
+  --color-lgt-orange: #c87444; /* light orange */
+  --color-flash-orange: #f75423; /* flash orange */
 }
 
 body {
@@ -75,12 +77,12 @@ body {
 }
 
 .footer-icon {
-  color: var(--color-text); /* or any color you want */
+  color: var(--color-text);
   transition: color 0.2s;
 }
 
 .footer-icon:hover {
-  color: var(--color-org); /* or another hover color */
+  color: var(--color-flash-orange);
 }
 
 .footer-credit {
@@ -129,6 +131,11 @@ body {
   box-shadow: -12px 12px 18px -8px rgba(24, 59, 78, 0.18),
     0 8px 16px -8px rgba(24, 59, 78, 0.12);
   background: #fff;
+}
+
+.book-cover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .book-title {
