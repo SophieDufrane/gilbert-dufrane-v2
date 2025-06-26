@@ -13,7 +13,7 @@
       content="auteur, écrivain, livres, romans, autoédition, littérature, Gilbert Dufrane, écrivain belge, ouvrages, publications, passion d'écrire"
     />
     <title>Gilbert Dufrane - Auteur</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 
     <!-- Styles  -->
     <link
@@ -72,16 +72,25 @@
     <main class="flex-grow-1">
       <section class="card-section">
         <div class="book-card w-100" style="--card-bg: #a7c0ca">
-          <div
-            class="book-card-inner d-flex flex-column align-items-center py-4"
-          >
-            <img
-              src="../images/cent_pour_cent.jpg"
-              alt="Cent Pour Cent Authentique"
-              class="book-detail-cover mb-3"
-            />
+          <div class="book-card-inner py-4">
+            <div class="book-cover-wrapper mb-3 position-relative">
+              <img
+                src="../images/cent_pour_cent.jpg"
+                alt="Cent Pour Cent Authentique"
+                class="book-detail-cover"
+              />
+              <a
+                href="../ouvrages.html"
+                class="btn btn-link p-0 back-arrow me-3"
+                aria-label="Retour aux ouvrages"
+                tabindex="0"
+              >
+                &lt;
+              </a>
+            </div>
+
             <h2 class="book-title mb-2">Cent Pour Cent Authentique</h2>
-            <hr class="section-divider mt-4" />
+            <hr class="section-divider mt-4 align-self-start" />
             <p class="book-summary mb-3">
               Sans amertume, sans concession, sans auto-flagellation, cent pour
               cent authentique. Même si l’horizon n’est plus aussi dégagé qu’à
@@ -95,7 +104,9 @@
             <a
               href="https://www.amazon.co.uk/Cent-pour-cent-authentique-auto-flagellation/dp/2379168261"
               class="btn-custom"
-              >Amazon</a
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acheter sur Amazon</a
             >
           </div>
         </div>

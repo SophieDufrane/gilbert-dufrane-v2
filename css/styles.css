@@ -1,10 +1,11 @@
 /* ---------------- Generic style ---------------- */
-@import url("https://fonts.googleapis.com/css2?family=Forum&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   /* Font stacks */
   --font-body: "Forum", serif;
   --font-specific: "IBM Plex Sans", sans-serif;
   --font-specific-transform: uppercase;
+  --font-back-arrow: "Red Hat Display", sans-serif;
 
   /* Brand palette 2025 */
   --color-text: #282737; /* dark blue */
@@ -104,6 +105,7 @@ body {
 .footer-icon {
   color: var(--color-text);
   transition: color 0.2s;
+  font-size: 1.2rem;
 }
 
 .footer-icon:hover {
@@ -118,10 +120,6 @@ body {
 .footer-credit a {
   color: var(--color-text);
   text-decoration: none;
-}
-
-.footer-icon {
-  font-size: 1.2rem;
 }
 
 /* ---------------- Landing Page ---------------- */
@@ -222,14 +220,37 @@ body {
 }
 
 /* ---------------- Detail - Book Cards ---------------- */
+.book-cover-wrapper {
+  position: relative;
+  margin: 1.2rem auto; /* center the wrapper itself */
+  display: block; /* not flex! */
+}
+
 .book-detail-cover {
   max-width: 130px;
   width: 100%;
   display: block;
-  margin: 1rem auto;
+  margin: 0 auto;
   box-shadow: -12px 12px 18px -8px rgba(24, 59, 78, 0.18),
     0 8px 16px -8px rgba(24, 59, 78, 0.12);
   background: #fff;
+}
+
+.back-arrow {
+  position: absolute;
+  left: -0.5rem; /* bring arrow closer to image */
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-back-arrow);
+  font-size: 4rem;
+  color: var(--color-flash-orange);
+  text-decoration: none !important;
+}
+
+.back-arrow:hover,
+.back-arrow:focus {
+  color: var(--color-text);
+  text-decoration: none !important;
 }
 
 /* ---------------- Media ---------------- */
