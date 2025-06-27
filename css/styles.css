@@ -258,6 +258,37 @@ body {
   text-decoration: none !important;
 }
 
+/* ---------------- About ---------------- */
+.about-section {
+  margin-top: 0;
+  padding-top: 5rem;
+}
+
+.about-inner {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.about-image {
+  max-width: 180px;
+  display: block;
+  margin: 2.5rem auto;
+}
+
+.about-title {
+  font-size: 2.3rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+.about-quote {
+  text-align: center;
+  font-family: var(--font-specific);
+  font-size: 0.8rem;
+  text-transform: var(--font-specific-transform);
+}
+
 /* ---------------- Media ---------------- */
 @media (max-width: 575.98px) {
   .footer-main-text {
