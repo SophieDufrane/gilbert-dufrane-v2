@@ -36,6 +36,7 @@ body {
   background-color: transparent;
   color: var(--color-text);
   font-family: var(--font-specific);
+  font-size: 0.9rem;
   text-transform: var(--font-specific-transform);
   padding: 0.5rem 1rem;
   border: var(--color-text) 1px solid;
@@ -73,7 +74,7 @@ body {
     rgba(218, 223, 227, 0) 100%
   );
   padding-top: 0.6rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -328,6 +329,10 @@ body {
 
   .footer-icon {
     font-size: 1.5rem;
+  }
+
+  .book-card-inner {
+    padding: 8rem; /* Increase padding for larger screens */
   }
 }
 
