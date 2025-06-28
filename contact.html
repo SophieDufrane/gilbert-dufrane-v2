@@ -71,6 +71,27 @@
 
     <main class="container py-5" style="margin-top: 6rem">
       <h2>Contact</h2>
+      <form
+        action="https://formsubmit.co/dufranesophie@gmail.com"
+        method="POST"
+      >
+        <input type="text" name="name" required placeholder="Nom Complet" />
+        <input type="email" name="email" required placeholder="Adresse email" />
+        <input type="tel" name="telephone" placeholder="Téléphone" />
+        <input type="text" name="address" placeholder="Adresse" />
+        <textarea name="message" required placeholder="Message"></textarea>
+
+        <!-- Optional: anti-spam (hidden field) -->
+        <input type="text" name="_honey" style="display: none" />
+
+        <!-- Optional: redirect after submit -->
+        <input type="hidden" name="_next" value="contact.html" />
+
+        <!-- Optional: disable captcha -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <button type="submit">Envoyer</button>
+      </form>
     </main>
 
     <!-- Footer content -->
