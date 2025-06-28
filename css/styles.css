@@ -32,19 +32,36 @@ body {
   margin: 25px auto;
 }
 
-.btn-custom {
+.btn-generic {
+  background-color: transparent;
   color: var(--color-text);
   font-family: var(--font-specific);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: var(--font-specific-transform);
   padding: 0.5rem 1rem;
   border: var(--color-text) 1px solid;
   border-radius: 0.3rem;
+  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 250px;
-  text-align: center;
+  min-width: 100px;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.btn-generic:hover,
+.btn-generic:focus {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+}
+
+.btn-generic,
+.btn-generic:visited,
+.btn-generic:hover,
+.btn-generic:focus {
+  text-decoration: none !important;
 }
 
 /* ---------------- Navbar ---------------- */
@@ -287,6 +304,29 @@ body {
   font-family: var(--font-specific);
   font-size: 0.8rem;
   text-transform: var(--font-specific-transform);
+}
+
+/* ---------------- Contact ---------------- */
+.contact-form {
+  width: 90%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #fff;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--color-text);
+  border-radius: 4px;
+  font-family: var(--font-specific);
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
 }
 
 /* ---------------- Media ---------------- */

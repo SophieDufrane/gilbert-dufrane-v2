@@ -70,11 +70,12 @@
     </header>
 
     <main class="container py-5" style="margin-top: 6rem">
-      <h2>Contact</h2>
       <form
         action="https://formsubmit.co/fa54c83c69ec73b3468782c42da8d4c6"
         method="POST"
+        class="contact-form"
       >
+        <h2 class="mb-3">Contact</h2>
         <input type="text" name="name" required placeholder="Nom Complet" />
         <input type="email" name="email" required placeholder="Adresse email" />
         <input type="tel" name="telephone" placeholder="Téléphone" />
@@ -90,17 +91,11 @@
           name="_next"
           value="https://sophiedufrane.github.io/gilbert-dufrane-v2/contact.html"
         />
-        <!-- Optional: thank you message -->
-        <input
-          type="hidden"
-          name="_autoresponse"
-          value="Merci pour votre message !"
-        />
 
         <!-- Optional: disable captcha -->
         <input type="hidden" name="_captcha" value="false" />
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" class="btn-generic btn-form">Envoyer</button>
       </form>
     </main>
 
