@@ -84,15 +84,18 @@
         <!-- Optional: anti-spam (hidden field) -->
         <input type="text" name="_honey" style="display: none" />
 
-        <!-- Force origin -->
+        <!-- Optional: redirect after submit -->
         <input
           type="hidden"
-          name="_origin"
-          value="https://sophiedufrane.github.io"
+          name="_next"
+          value="https://sophiedufrane.github.io/gilbert-dufrane-v2/contact.html"
         />
-
-        <!-- Optional: redirect after submit -->
-        <input type="hidden" name="_next" value="contact.html" />
+        <!-- Optional: thank you message -->
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Merci pour votre message !"
+        />
 
         <!-- Optional: disable captcha -->
         <input type="hidden" name="_captcha" value="false" />
