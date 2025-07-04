@@ -292,7 +292,7 @@ body {
 }
 
 .about-image {
-  max-width: 70%;
+  max-width: 60%;
   height: auto;
 }
 
@@ -356,6 +356,10 @@ body {
 
   .about-section {
     padding-top: 10rem;
+  }
+
+  .about-image {
+    max-width: 90%;
   }
 }
 
