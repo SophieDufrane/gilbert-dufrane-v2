@@ -71,7 +71,22 @@
 
     <main class="flex-grow-1 d-flex flex-column p-0">
       <section class="hero-section d-flex align-items-center">
-        <div class="hero-content">
+        <div class="hero-content position-relative text-center">
+          <picture>
+            <img
+              src="images/hero_mobile.jpg"
+              alt="Livres flous"
+              class="img-fluid hero-img"
+            />
+            <source
+              srcset="images/blurred_books_tablet.jpg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="images/blurred_books_desktop.jpg"
+              media="(min-width: 992px)"
+            />
+          </picture>
           <h1 class="hero-title">La<br />Passion<br />d'Écrire !</h1>
         </div>
       </section>
@@ -79,7 +94,7 @@
 
     <!-- Footer content -->
     <footer class="site-footer mt-auto">
-      <div class="container py-4 py-md-5">
+      <div class="container py-2 py-md-3">
         <div class="row align-items-center">
           <div class="col-8 col-sm-9">
             <p class="mb-0">&copy; 2025 Gilbert Dufrane</p>
