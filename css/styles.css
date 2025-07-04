@@ -34,7 +34,7 @@ body {
   height: 1px;
   background-color: var(--color-flash-orange);
   border: none;
-  margin: 25px auto;
+  margin: 30px auto;
 }
 
 .btn-generic {
@@ -288,20 +288,12 @@ body {
 
 /* ---------------- About ---------------- */
 .about-section {
-  margin-top: 0;
-  padding-top: 5rem;
-}
-
-.about-inner {
-  width: 100%;
-  padding: 2rem;
-  box-sizing: border-box;
+  padding: 5rem 2rem 2rem 2rem;
 }
 
 .about-image {
-  max-width: 180px;
-  display: block;
-  margin: 2.5rem auto;
+  max-width: 70%;
+  height: auto;
 }
 
 .about-title {
@@ -313,8 +305,7 @@ body {
 .about-quote {
   text-align: center;
   font-family: var(--font-specific);
-  font-size: 0.8rem;
-  text-transform: var(--font-specific-transform);
+  font-size: 1.2rem;
 }
 
 /* ---------------- Contact ---------------- */
@@ -362,6 +353,10 @@ body {
   .book-card-inner {
     padding: 8rem; /* Increase padding for larger screens */
   }
+
+  .about-section {
+    padding-top: 10rem;
+  }
 }
 
 /* Desktop and up */
@@ -372,5 +367,10 @@ body {
 
   .hero-title-break {
     display: none;
+  }
+
+  .about-section {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
