@@ -73,21 +73,25 @@
       <section class="hero-section d-flex align-items-center">
         <div class="hero-content position-relative text-center">
           <picture>
+            <source
+              srcset="images/hero_desktop.jpg"
+              media="(min-width: 992px)"
+            />
+            <source
+              srcset="images/hero_tablet.jpg"
+              media="(min-width: 768px)"
+            />
             <img
               src="images/hero_mobile.jpg"
               alt="Livres flous"
               class="img-fluid hero-img"
             />
-            <source
-              srcset="images/blurred_books_tablet.jpg"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="images/blurred_books_desktop.jpg"
-              media="(min-width: 992px)"
-            />
           </picture>
-          <h1 class="hero-title">La<br />Passion<br />d'Écrire !</h1>
+          <h1 class="hero-title">
+            La<br class="hero-title-break" />
+            Passion<br class="hero-title-break" />
+            d'Écrire&nbsp;!
+          </h1>
         </div>
       </section>
     </main>
