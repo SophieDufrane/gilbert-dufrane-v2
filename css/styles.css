@@ -186,35 +186,24 @@ body {
 }
 
 /* ---------------- Ouvrages - Book Cards ---------------- */
-.card-section .book-card:first-child {
-  margin-top: 0;
-  padding-top: 5rem;
-}
-
 .card-section {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 5rem 2rem 2rem 2rem;
 }
 
 .book-card {
-  background-color: var(--card-bg, #f5f5dc);
-  width: 100%;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.book-card-inner {
-  width: 100%;
-  padding: 2.5rem; /* Add vertical and horizontal padding for content */
-  box-sizing: border-box;
+  max-width: 85%;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .book-cover {
-  max-width: 220px;
-  width: 100%;
-  display: block;
-  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+  /* Optionally set a max-height for consistency */
+  max-height: 300px;
+  object-fit: cover;
   box-shadow: -12px 12px 18px -8px rgba(24, 59, 78, 0.18),
     0 8px 16px -8px rgba(24, 59, 78, 0.12);
   background: #fff;
@@ -239,7 +228,7 @@ body {
 }
 
 .book-title {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: var(--font-body);
   color: var(--color-text);
 }
@@ -248,8 +237,6 @@ body {
   font-size: 1rem;
   color: var(--color-text);
   text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 /* ---------------- Detail - Book Cards ---------------- */
@@ -350,8 +337,8 @@ body {
     font-size: 3.5rem;
   }
 
-  .book-card-inner {
-    padding: 8rem; /* Increase padding for larger screens */
+  .book-card {
+    max-width: 75%;
   }
 
   .about-section {
